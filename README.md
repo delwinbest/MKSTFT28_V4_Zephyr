@@ -1,14 +1,3 @@
-..  Copyright 2019-present PlatformIO <contact@platformio.org>
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 How to build PlatformIO based project
 =====================================
 
@@ -18,21 +7,40 @@ How to build PlatformIO based project
 4. Run these commands:
 
 ```shell
-# Change directory to example
-$ cd platform-ststm32/examples/zephyr-blink
-
 # Build project
 $ pio run
 
 # Upload firmware
 $ pio run --target upload
-
-# Build specific environment
-$ pio run -e blackpill_f103c8
-
-# Upload firmware for the specific environment
-$ pio run -e blackpill_f103c8 --target upload
-
-# Clean build files
-$ pio run --target clean
 ```
+
+## Connecting ST-LINK v2 to the MKS TFT: 
+
+    ST-LINK    MKS-TFT32: 
+    5v         AUX-1 5v 
+    GND        AUX-1 GND 
+    SWDIO      JTAG pin 4 
+    SWCLK      JTAG pin 5 
+
+## Board JTAG connector (left-to-right):
+
+    3.3v   GND   GND 
+    SWDIO  SWCLK RESET
+
+Disconnect MKS TFT from printer before connecting ST-LINK. Do not connect ST-LINK 3.3v pin.
+
+
+## Board Configuration
+
+    BOOT Mode: Boot0 = 0, Boot 1 = 0
+
+    SPI1 (default): SPIFlash: Winbond 8MB (64Mb) Serial Flash Memory W25Q CS: PB9,MOSI=PA7,PIN_SPI_MISO=PA6,PIN_SPI_SCK=PA5
+    SPI1 (default): SDCard CS: PD11, MOSI=PA7,PIN_SPI_MISO=PA6,PIN_SPI_SCK=PA5
+    SPI3 (remapped): URTouch CS: PC5
+    I2C: Two-wire Serial EEPROM AT24C16B 
+    UART1: Wifi connector
+    UART2: Octopi
+    UART4: Touch controller
+    PX11/12, UART1_CTS/RTS: USB
+    PA2: Buzzer
+
