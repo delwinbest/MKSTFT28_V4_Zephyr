@@ -1,0 +1,77 @@
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/dbest/git/MKSTFT28_V4_Zephyr/include",
+                "/Users/dbest/git/MKSTFT28_V4_Zephyr/src",
+                "/Users/dbest/.platformio/packages/framework-zephyr/include",
+                "/Users/dbest/git/MKSTFT28_V4_Zephyr/.pio/build/mkstft28_v4/zephyr/include/generated",
+                "/Users/dbest/.platformio/packages/framework-zephyr/soc/arm/st_stm32/stm32f1",
+                "/Users/dbest/.platformio/packages/framework-zephyr/drivers",
+                "/Users/dbest/.platformio/packages/framework-zephyr/soc/arm/st_stm32/common",
+                "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/cmsis/CMSIS/Core/Include",
+                "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f1xx/soc",
+                "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f1xx/drivers/include",
+                "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f1xx/drivers/include/Legacy",
+                "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/common_ll/include",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/dbest/git/MKSTFT28_V4_Zephyr/include",
+                    "/Users/dbest/git/MKSTFT28_V4_Zephyr/src",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/include",
+                    "/Users/dbest/git/MKSTFT28_V4_Zephyr/.pio/build/mkstft28_v4/zephyr/include/generated",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/soc/arm/st_stm32/stm32f1",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/drivers",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/soc/arm/st_stm32/common",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/cmsis/CMSIS/Core/Include",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f1xx/soc",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f1xx/drivers/include",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f1xx/drivers/include/Legacy",
+                    "/Users/dbest/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/common_ll/include",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60104",
+                "STM32F1",
+                "STM32F103xB",
+                "BUILD_VERSION=zephyr-v20701",
+                "HSE_VALUE=8000000",
+                "KERNEL",
+                "STM32F103xB",
+                "USE_FULL_LL_DRIVER",
+                "USE_HAL_DRIVER",
+                "_FORTIFY_SOURCE=2",
+                "__PROGRAM_START",
+                "__ZEPHYR__=1",
+                ""
+            ],
+            "cStandard": "c99",
+            "forcedInclude": [
+                "/Users/dbest/git/MKSTFT28_V4_Zephyr/.pio/build/mkstft28_v4/zephyr/include/generated/autoconf.h",
+                "/Users/dbest/.platformio/packages/framework-zephyr/include/toolchain/zephyr_stdint.h",
+                ""
+            ],
+            "compilerPath": "/Users/dbest/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mcpu=cortex-m3",
+                "-mthumb",
+                "-mabi=aapcs",
+                "-mfp16-format=ieee",
+                "-isystem",
+                "/Users/dbest/.platformio/packages/framework-zephyr/lib/libc/minimal/include",
+                "-isystem",
+                "/Users/dbest/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include",
+                "-isystem",
+                "/Users/dbest/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                ""
+            ],
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

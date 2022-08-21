@@ -1,0 +1,8 @@
+# STM32 Minimum Development Board Configuration
+
+# Copyright (c) 2017, embedjournal.com
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_BOARD_MKSTFT28_V4
+	bool "STM32 Minimum Development Board (Black)"
+	depends on SOC_STM32F107XC

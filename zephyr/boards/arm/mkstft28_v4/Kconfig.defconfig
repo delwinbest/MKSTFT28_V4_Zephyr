@@ -1,0 +1,11 @@
+# STM32 Minimum Development Board Configuration
+
+# Copyright (c) 2017, embedjournal.com
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_MKSTFT28_V4
+
+config BOARD
+	default "mkstft28_v4" if BOARD_MKSTFT28_V4
+
+endif # BOARD_MKSTFT28_V4
