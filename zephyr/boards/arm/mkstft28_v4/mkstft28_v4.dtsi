@@ -20,16 +20,23 @@
 		 zephyr,flash = &flash0;
 	 };
  
-	 leds {
-		 compatible = "gpio-leds";
-		 led: led {
-			 gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
-			 label = "LD";
-		 };
-	 };
+	//  leds {
+	// 	 compatible = "gpio-leds";
+	// 	 led: led {
+	// 		 gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
+	// 		 label = "LD";
+	// 	 };
+	//  };
  
+	buzzer {
+		compatible = "gpio-leds";
+		buzzer: buzzer {
+			gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
+			label = "LD";
+		};
+	};
 	 aliases {
-		 led0 = &led;
+		 buzzer0 = &buzzer;
 	 };
  };
  

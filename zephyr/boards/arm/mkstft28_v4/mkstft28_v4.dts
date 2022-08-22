@@ -6,14 +6,3 @@
 
 /dts-v1/;
 #include "mkstft28_v4.dtsi"
-
-/ {
-	model = "STM32 Minimum Development Board (Black)";
-	compatible = "st,mkstft28_v4", "st,stm32f103c8";
-
-	leds {
-		led: led {
-			gpios = <&gpioa 2 GPIO_ACTIVE_LOW>;
-		};
-	};
-};
